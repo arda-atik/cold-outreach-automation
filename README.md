@@ -1,21 +1,21 @@
-# 📬 Local Business Cold Outreach Bot
+# 📬 Python Cold Outreach Automation
 
-A minimal Python script built to automate personalized email outreach for local business communication and lead discovery.
+A lightweight, beginner-friendly Python script built to automate personal cold email outreach using standard SMTP over SSL.
 
 ---
 
-## 🎯 Purpose
-Running manual client outreach alongside academic engineering studies is repetitive and inefficient. This lightweight utility:
-- Reads prospective business contact addresses from a clean text list.
-- Connects securely via Gmail SMTP using SSL.
-- Applies randomized delay intervals (15–30s) between dispatches to maintain healthy sender reputation and avoid automated spam classification.
+## 🎯 Features
+- Reads recipient lists directly from a plain text file (`leads.txt`).
+- Connects securely to Gmail SMTP on port 465.
+- Applies randomized delays (5–10s) between dispatches to maintain reasonable sending rates.
+- Keeps private credentials fully decoupled from the codebase using environment variables.
 
 ---
 
 ## ⚙ Setup & Usage
 
-### 1. Configure Environment Variables
-Store credentials in your local shell environment rather than hardcoding them into source files:
+### 1. Set Credentials
+Configure your Gmail credentials in your environment:
 
 ```bash
 export GMAIL_USER="your-email@example.com"
